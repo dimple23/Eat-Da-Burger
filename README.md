@@ -10,8 +10,7 @@ TODO:
 4) Your app will store every burger in a database, whether devoured or not.
 
 # Directory Structure (MVC)
-
-![screen shot 2017-08-08 at 9 04 17 pm](https://user-images.githubusercontent.com/20759022/29104877-08c021a0-7c7e-11e7-9565- da1bb79421bd.png)
+![screen shot 2017-08-08 at 9 04 17 pm](https://user-images.githubusercontent.com/20759022/29104877-08c021a0-7c7e-11e7-9565-da1bb79421bd.png)
 
 # Installation
 1) Git - Installing Git: Run git from terminal
@@ -26,7 +25,7 @@ TODO:
   5. Submit a pull request :D
   
 # History
-Description: This marks the end of unit 14. Project has implemented basics of HTML/CSS, Git Version Control, and Terminal/Console commands.  
+Description: This marks the end of unit 14. Project has implemented semantic templating language "Handlebars" and linked to my SQL databases to front-end application. 
 
 # Credits 
 Description: N/A
