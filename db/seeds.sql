@@ -1,3 +1,3 @@
-INSERT INTO burgers
+INSERT INTO burgers (burger_name, devoured, ts)
 
-VALUES (`bacon cheeseburger`, true, `2017-08-11T02:27:59+00:00`)
+VALUES ("bacon", true, '2008-01-01 00:00:01');
