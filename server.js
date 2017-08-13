@@ -1,5 +1,3 @@
-// DEPENDENCIES // 
-// ==============================================================================
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
@@ -47,6 +45,16 @@ app.use('/', routes);
 var port = 3000;
 app.listen(port);
 
-app.get('/', function(req, res) {
-	res.render('index');
-});
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,25 @@
 <div class="container">	
-	<div class="jumbotron"> 
 		<img src="/assets/img/burger.png"> 
 		<h1> Eat-Da-Burger!</h1>
 	</div>
+
+{{! -- burger list before being eaten}}
+
+<div class="before"
+
+{{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+
+
+
+
+</div>
+
+
