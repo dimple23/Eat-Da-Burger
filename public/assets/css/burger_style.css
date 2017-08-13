@@ -1,3 +1,17 @@
 body {
-	background-color: #ffa500;
+	background-color: #FFDC92;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1em;
 }
+
+h1 {
+	text-align: center;
+	color: crimson;
+	/*margin-top: 150px;*/
+	letter-spacing: 2px;
+
+}
+
+img {
+	width: 150px;
+	margin-left: 640px;
