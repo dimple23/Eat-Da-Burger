@@ -4,6 +4,14 @@ body {
 	font-size: 1em;
 }
 
+.container {
+	text-align: center;
+}
+
+.submit-row {
+	text-align: center;
+}
+
 h1 {
 	text-align: center;
 	color: crimson;
@@ -16,6 +24,29 @@ img {
 	position: absolute;
 	top: 2%;
 	left: 46.5%;
+}
+
+form {
+	padding: 20px;
+}
+
+input#name {
+	width: 25%;
+	padding: 2%;
+}
+
+
+
+button.addBurgerButton {
+	position: absolute;
+	bottom: 60%;
+	left: 48%;
+
+}
+
+
+
+
 
 	
 	

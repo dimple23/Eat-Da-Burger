@@ -1,6 +1,4 @@
-// DEPENDENCIES
-// Series of npm packages that we will use to give our server useful functionality
-// ==============================================================================
+// PULL IN REQUIRED DEPENDENCIES
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -33,7 +31,8 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-//pointing to where our Express routes are located
+
+//Import routes and give the server across to them
 var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
 
@@ -43,18 +42,7 @@ app.use('/', routes);
 // ==============================================================================
 
 var port = 3000;
+
 app.listen(port);
-
-
-
-
-
-
-
-
-
-
-
-
 
 

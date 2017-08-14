@@ -1,13 +1,10 @@
-<div class="container">	
-		<img src="/assets/img/burger.png"> 
-		<h1> Eat-Da-Burger!</h1>
-	</div>
+<h1>Eat-Da-Burger!</h1>
 
-{{! -- burger list before being eaten}}
-
-<div class="before"
-
-{{#each burgers}}
+<main>
+  <div class="container">
+    <div class="burger-before">
+      <div class="col s6">
+        {{#each burgers}}
           {{#unless this.devoured}}
             <div>
               <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
@@ -16,10 +13,29 @@
             </div>
           {{/unless}}
         {{/each}}
+      </div>
 
+      <div class="burger-after">
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
 
-
-
+<div class="submit-row">
+  <div class="col s12">
+    <form action="/burgers" method="POST">
+      <input type="text" id="name" name="burger_name" placeholder="">
+      <button type="submit" class="addBurgerButton">Add The Burger</button>
+    </form>
+  </div>
 </div>
-
 

@@ -6,38 +6,37 @@ var router = express.Router();
 var burger = require('../models/burger.js');
 
 //EXPRESS GET ROUTE
-router.get('/', function (req, res) {
-	burger.selectAll(function(data) {
+router.get('/', function(req, res) {
+	burger.all(function(data) {
 		var hbsObject = { 
 			burgers: data 
 		};
-		// console.log(hbsObject);
+		console.log(hbsObject);
 		res.render('index', hbsObject);
 	});
 });
 
 //EXPRESS POST ROUTE
-router.post('/burgers', function (req, res) {
+router.post('/burgers', function(req, res) {
 	burger.insertOne([
     'burger_name'
-  ], [
+    ], [
     req.body.burger_name
-  ], function(data) {
-    res.redirect('/');
-  });
+    ], function(data) {
+      res.redirect('/');
+    });
 });
 
 //EXPRESS PUT ROUTE
-router.put('/burgers/:id', function (req, res) {
+router.put('/burgers/:id', function(req, res) {
 	var condition = 'id = ' + req.params.id;
 
-//console.log('condition', condition);
-
-burger.updateOne({
+  burger.updateOne({
     devoured: true
   }, condition, function(data) {
     res.redirect('/');
   });
 });
 
+//Experts routes for server.js to use. 
 module.exports = router;
