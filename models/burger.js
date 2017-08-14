@@ -4,8 +4,8 @@ var orm = require('../config/orm.js');
 
 //Create the burger object
 var burger = {
-	all: function (cb) {
-		orm.all('burgers', function (res){
+	selectAll: function (cb) {
+		orm.selectAll('burgers', function (res){
 			cb(res);
 		});
 	},

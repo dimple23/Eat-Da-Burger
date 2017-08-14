@@ -7,29 +7,29 @@ var burger = require('../models/burger.js');
 
 //EXPRESS GET ROUTE
 router.get('/', function(req, res) {
-	burger.all(function(data) {
-		var hbsObject = { 
-			burgers: data 
-		};
-		console.log(hbsObject);
-		res.render('index', hbsObject);
-	});
+  burger.selectAll(function(data) {
+    var hbsObject = {
+      burgers: data
+    };
+    // console.log(hbsObject);
+    res.render('index', hbsObject);
+  });
 });
 
 //EXPRESS POST ROUTE
 router.post('/burgers', function(req, res) {
-	burger.insertOne([
+  burger.insertOne([
     'burger_name'
-    ], [
+  ], [
     req.body.burger_name
-    ], function(data) {
-      res.redirect('/');
-    });
+  ], function(data) {
+    res.redirect('/');
+  });
 });
 
 //EXPRESS PUT ROUTE
 router.put('/burgers/:id', function(req, res) {
-	var condition = 'id = ' + req.params.id;
+  var condition = 'id = ' + req.params.id;
 
   burger.updateOne({
     devoured: true
