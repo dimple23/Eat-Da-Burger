@@ -41,7 +41,7 @@ app.use('/', routes);
 // The below code effectively "starts" our server
 // ==============================================================================
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 app.listen(port);
 

@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ("", true);
+INSERT INTO burgers (last_name,) VALUES ("", true);
 
 

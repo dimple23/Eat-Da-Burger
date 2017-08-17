@@ -4,7 +4,8 @@
   "description": "Eat Da Burger App",
   "main": "index.js",
   "scripts": {
-    "test": "hi hi hi"
+    "test": "hi hi hi",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

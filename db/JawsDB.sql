@@ -1,6 +1,5 @@
 
-CREATE TABLE todos 
-
+CREATE TABLE burgers 
 (
 
 id INT NOT NULL AUTO_INCREMENT,
