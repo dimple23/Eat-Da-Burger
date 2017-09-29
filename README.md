@@ -12,6 +12,9 @@ TODO:
 # Directory Structure (MVC)
 ![screen shot 2017-08-08 at 9 04 17 pm](https://user-images.githubusercontent.com/20759022/29104877-08c021a0-7c7e-11e7-9565-da1bb79421bd.png)
 
+# Live Demo
+<a href="https://imgflip.com/gif/1ws0wc"><img src="https://i.imgflip.com/1ws0wc.gif" title="made at imgflip.com"/></a>
+
 # Installation
 1) Git - Installing Git: Run git from terminal
 2) git clone git://github.com/Kellenkjames/Eat-Da-Burger.git
@@ -31,7 +34,7 @@ Description: This marks the end of unit 14. Project has implemented semantic tem
 Description: The Coding Bootcamp @ UCLA Extension
 
 # License
-TODO: MIT License
+MIT License
 
 # Copyright
 Copyright (c) [2017] [Kellen James]
