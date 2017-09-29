@@ -1,4 +1,4 @@
-# Project Name - Eat-Da-Burger!
+# Project Name - Eat-Da-Burger
 Description: Creating a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Following the MVC design pattern and using Node + MySQL to query and route data in your app, and Handlebars to generate your HTML.
 Designed to be used as a communication tool for fellow developers in the community and potential employers. 
 
@@ -28,9 +28,10 @@ TODO:
 Description: This marks the end of unit 14. Project has implemented semantic templating language "Handlebars" and linked to my SQL databases to front-end application. 
 
 # Credits 
-Description: N/A
+Description: The Coding Bootcamp @ UCLA Extension
 
 # License
 TODO: MIT License
 
+# Copyright
 Copyright (c) [2017] [Kellen James]
